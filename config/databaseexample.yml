@@ -1,0 +1,24 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: tejash
+  password: 123456
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: api_login_logout_development
+  username: tejash
+  password: 123456
+
+test:
+  <<: *default
+  database: api_login_logout_test
+
+production:
+  <<: *default
+  database: api_login_logout_production
+  username: api_login_logout
+  password: <%= ENV['API_LOGIN_LOGOUT_DATABASE_PASSWORD'] %>
