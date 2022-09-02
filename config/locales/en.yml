@@ -29,5 +29,37 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
+
 en:
-  hello: "Hello world"
+  messages:
+    invalid_login: 'Invalid email or password.'
+    inactive_user: Sorry, this account has been deactivated. Please contact Admin.
+    email: "Email is already taken."
+  success:
+    create: "%{resource} created successfully."
+    update: "%{resource} updated successfully."
+    destroy: "%{resource} deleted successfully."
+    display: "%{resource} profile displayed successfully."
+    index: "%{resource} listing dislayed successfully."
+    display: "%{resource} displayed successfully."
+    sent: "%{resource} sent successfully."
+    send: " Coins send successfully"
+  authorization:
+    unauthorize: "You can't perform this action."
+    record_not_found: 'You can not access this record or the record you are
+      trying to access does not exist.'
+  error:
+    record_not_found: "No records found"
+    not_exist: "User does not exist"
+    not_exist_all: "Users does not exist"
+    validate: "Please enter correct data"
+  search:
+     display: "Searched successfully."
+  common:
+    display:  "Either you can't perform this action or user does not exist"
+  profile:
+    display: "User list displayed successfully"
+  create:
+    not_create: "Unauthorized to perform this action"
+  
+    
